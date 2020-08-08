@@ -177,7 +177,7 @@ Ufchange <- function(comps.list, id, year.range = NULL, FVE = 85, beta = NULL, K
       return(c(yeari[max.idx], TN, totalK))
     } else {
       max.idx <- which(tn == max(tn))
-      P2 <- ceiling(max(xx[max.idx])*n)
+      P2 <- ceiling(max(xx[max.idx])*N)
       TN <- max(tn)
       return(c(yeari[P2], TN, totalK))
     }
